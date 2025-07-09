@@ -9,7 +9,7 @@ Bu proje, Android'de **Jetpack Navigation Component** kullanılarak Fragment'lar
 - Fragment
 - View Binding
 - Android Studio
-
+- Safe Args
 ## 🚀 Proje Özellikleri
 
 - Navigation Graph kullanarak ekran geçişlerinin tanımlanması
