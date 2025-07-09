@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationkredihesapla"
+    app:startDestination="@id/picturesFragment">
+
+    <fragment
+        android:id="@+id/picturesFragment"
+        android:name="com.mustafaakdas.navigation.PicturesFragment"
+        android:label="fragment_pictures"
+        tools:layout="@layout/fragment_pictures" >
+        <action
+            android:id="@+id/action_picturesFragment_to_recourseFragment"
+            app:destination="@id/recourseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recourseFragment"
+        android:name="com.mustafaakdas.navigation.RecourseFragment"
+        android:label="fragment_recourse"
+        tools:layout="@layout/fragment_recourse" >
+        <action
+            android:id="@+id/action_recourseFragment_to_picturesFragment"
+            app:destination="@id/picturesFragment" />
+        <action
+            android:id="@+id/action_recourseFragment_to_possiblePaymentPlanFragment"
+            app:destination="@id/possiblePaymentPlanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/possiblePaymentPlanFragment"
+        android:name="com.mustafaakdas.navigation.PossiblePaymentPlanFragment"
+        android:label="fragment_possible_payment_plan"
+        tools:layout="@layout/fragment_possible_payment_plan" >
+        <argument
+            android:name="sayi"
+            app:argType="integer" />
+    </fragment>
+    <argument android:name="Tutar"
+        app:argType="integer"
+        android:defaultValue="0" />
+</navigation>

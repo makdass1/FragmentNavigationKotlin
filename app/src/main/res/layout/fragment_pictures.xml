@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PicturesFragment">
+
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="159dp"
+        android:layout_height="166dp"
+        android:contentDescription="konus"
+        android:scaleType="centerCrop"
+        android:src="@drawable/akbank"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="159dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="40dp"
+        android:contentDescription="Ev"
+        android:scaleType="centerCrop"
+        android:src="@drawable/halkbank"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="167dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="120dp"
+        android:contentDescription="Gel"
+        android:scaleType="centerCrop"
+        android:src="@drawable/indir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="159dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:contentDescription="Dur"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vakif"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
